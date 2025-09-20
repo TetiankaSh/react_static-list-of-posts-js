@@ -1,8 +1,7 @@
 import './CommentList.scss';
-import comments from '../../api/comments.json';
 import { CommentInfo } from '../CommentInfo/CommentInfo';
 
-export const CommentList = () => {
+export const CommentList = ({ comments }) => {
   return (
     <div className="CommentList">
       {comments.map(comment => (

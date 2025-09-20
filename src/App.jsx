@@ -4,7 +4,7 @@ import postsFromServer from './api/posts.json';
 import commentsFromServer from './api/comments.json';
 import usersFromServer from './api/users.json';
 // import { CommentInfo } from './components/CommentInfo/CommentInfo';
-import { CommentList } from './components/CommentList/CommentList';
+// import { CommentList } from './components/CommentList/CommentList';
 import { PostInfo } from './components/PostInfo/PostInfo';
 
 const preparedPosts = postsFromServer.map(post => {
@@ -21,7 +21,7 @@ export const App = () => (
     {preparedPosts.map(post => (
       <div key={post.id} className="PostWrapper">
         <PostInfo post={post} />
-        <CommentList comments={post.comments} />
+        {/* <CommentList comments={post.comments} /> */}
       </div>
     ))}
   </section>
