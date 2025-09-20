@@ -1,6 +1,6 @@
 import './UserInfo.scss';
 
-export const UserInfo = ({ users: user }) => (
+export const UserInfo = ({ user }) => (
   <p>
     {' Posted by  '}
 
